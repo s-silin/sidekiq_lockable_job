@@ -32,7 +32,7 @@ module Sidekiq::LockableJob
     end
 
     def self.redis
-      $redis
+      Rails.cache.data
     end
   end
 end
